@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--jQuery UI Datepicker library -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script type="module" defer src="/scripts/script.js"></script>
+
+    <title>Travel Tur</title>
+
+</head>
+
+<body>
+    <div class="bg-img">
+        <section id="header">
+            <a href="./index.html" class="logo">
+                <img src="/img/logo.png" alt="logo">
+            </a>
+            <div>
+                <ul id="nav-navigation">
+                    <li><a class="active" href="/pages/destination.html">Destinations</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li id="lg-user"><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                    <a href="#" id="close"><i class="far fa-times"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <i id="bar" class="fa-solid fa-outdent"></i></i>
+            </div>
+        </section>
+        <div class="banner_content">
+            <h2>UNFORGOTABLE TRAVEL AWAITS THE</h2>
+            <h1>ADVENTURE</h1>
+            <h5>Experience the thrills of exploring East Asia's most fasctinating destinations <br> with our expertly curated
+                travel packages</h5>
+            <div class="banner_container">
+                <!-- <div class="dropdown_container"> -->
+                <select id="destination" class="dropdown">
+                    <option value="">Destination</option>
+                </select>
+                <div class="date_dropdown">
+                    <input type="text" id="checkin_date" placeholder="Date">
+                    <div class="datepicker" id="checkin_datepicker"></div>
+                </div>
+                <select id="price" class="dropdown">
+                    <option value="">Price</option>
+                    <option value="">$500 - $1000</option>
+                    <option value="">$1000 - $2000</option>
+                    <option value="">$2000 - $5000</option>
+                    <option value="">$5000 - $10000</option>
+                </select>
+                <!-- </div> -->
+                <button class="search_btn">Search</button>
+            </div>
+            <div class="sponsors">
+                <img src="/img/tbl-transparent-logo.png" alt="">
+                <img src="/img/JOSUN_HOTELS_&_RESORTS.png" alt="">
+                <img src="/img/trekk.png" alt="">
+                <img src="/img/Responsible_Travel_logo_(black).png" alt="">
+                <img src="/img/Wikivoyage-Logo-v3-en.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <section id="product1" class="section-p1">
+        <div class="overlay">Destinations</div>
+        <h3>POPULAR DESTINATIONS</h3>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="/img/Indonesia.jpg" alt="" />
+                <div class="des">
+                    <h5>Indonesia</h5>
+                    <span> <i class="fa-solid fa-location-dot"></i> 20 packages</span> <!--!!!js packages -->
+                </div>
+                <a href="#"><i class="fa-solid fa-circle-chevron-right fa-3x"></i></a>
+            </div>
+            <div class="pro">
+                <img src="/img/Japan.jpg" alt="" />
+                <div class="des">
+                    <h5>Japan</h5>
+                    <span><i class="fa-solid fa-location-dot"></i> 20 packages</span>
+                </div>
+                <a href="#"><i class="fa-solid fa-circle-chevron-right fa-3x"></i></a>
+            </div>
+            <div class="pro">
+                <img src="/img/pexels-pixabay-259772.jpg" alt="" />
+                <div class="des">
+                    <h5>China</h5>
+                    <span> <i class="fa-solid fa-location-dot"></i> 20 packages</span>
+                </div>
+                <a href="#"><i class="fa-solid fa-circle-chevron-right fa-3x"></i></a>
+            </div>
+            <div class="pro">
+                <img src="/img/Philipines.jpg" alt="" />
+                <div class="des">
+                    <h5>Philipines</h5>
+                    <span><i class="fa-solid fa-location-dot"></i> 20 packages</span>
+                </div>
+                <a href="#"><i class="fa-solid fa-circle-chevron-right fa-3x"></i></a>
+            </div>
+        </div>
+        <button class="btn">Load more destination</button>
+    </section>
+
+    <section id="book">
+        <div class="book1">
+            <div class="book1_content">
+                <h1>Escape <br>the paradise</h1>
+                <h5>Book now and save 20% on your magical trip </h5>
+                <button>Book now</button>
+            </div>
+        </div>
+        <div class="book2">
+            <div class="book2_content">
+                <h1>ADVENTURE<br>AWAITS</h1>
+                <h4>Book a tour today, get a FREE excursion!</h4>
+                <button>Book now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="trip">
+        <div class="trip_container">
+            <div class="container1">
+                <span><i class="fa-solid fa-face-laugh-beam fa-2x"></i></span>
+                <h3>Customer Delight</h3>
+                <h6>We deliever the best service <br> and experience for <br> our customers</h6>
+            </div>
+            <div class="container2">
+                <i class="fa-solid fa-mountain-city fa-2x"></i>
+                <h3>Authentic Adventure</h3>
+                <h6>We deliever the real adventure <br> experience for <br> our customers</h6>
+            </div>
+            <div class="container3">
+                <i class="fa-solid fa-flag fa-2x"></i>
+                <h3>Expert Guides</h3>
+                <h6>We deliever only expert <br> tour guides for our <br> dear customers</h6>
+            </div>
+            <div class="container4">
+                <i class="fa-solid fa-clock-rotate-left fa-2x"></i>
+                <h3>Time Flexability</h3>
+                <h6>We welcome time flexability <br> for traveling for our <br> dear customers</h6>
+            </div>
+        </div>
+    </section> -->
+    <div class="map-section">
+        <img src='/img/map_bg.jpg' alt="Map Background" class="map-background">
+        <div class="people">
+            <img src="/img/person1.jpg" alt="Person 1" id="person" class="person1"
+                data-review='"Booking our vacation through this travel agency was an absolute delight! From the moment we inquired about destinations to the day we returned home, everything was seamless. The staff was incredibly knowledgeable and helped us plan the perfect itinerary. We had an unforgettable experience, and we cannot wait to book our next trip with them!" '>
+            <img src="/img/person2.jpg" alt="Person 2" id="person" class="person2"
+                data-review='"I cannot thank this travel agency enough for organizing the most incredible adventure for my family. Every detail was taken care of, from arranging accommodations to scheduling tours. They truly went above and beyond to ensure our trip was stress-free and unforgettable. We had the time of our lives and made memories that will last a lifetime. Highly recommend!" '>
+            <img src="/img/person3.jpg" alt="Person 3" id="person" class="person3"
+                data-review='"My experience with this travel agency exceeded all expectations. Their attention to detail and personalized service made our trip one for the books. They listened to our preferences and crafted an itinerary that perfectly suited our interests. The accommodations were top-notch, and the tours were informative and enjoyable. I would not hesitate to recommend them to anyone looking for a hassle-free travel experience."'>
+            <img src="/img/person4.jpg" alt="Person 4" id="person" class="person4"
+                data-review='"I have traveled extensively, but I have never encountered a travel agency as professional and dedicated as this one. From the moment I contacted them to the day I returned home, everything was handled with precision and care. They took the time to understand my travel style and preferences, and the result was a trip that surpassed all my expectations. I will definitely be booking with them again in the future."'>
+            <img src="/img/person5.jpg" alt="Person 5" id="person" class="person5"
+                data-review='"Planning a trip can be overwhelming, but this travel agency made it a breeze. Their expertise and insider knowledge helped us navigate through countless options and choose the perfect destination. The itinerary they put together was well-balanced and tailored to our interests. We felt supported every step of the way, and the trip itself was nothing short of spectacular. Thank you for an unforgettable experience!"'>
+        </div>
+        <div class="review-section">
+            <div class="icon-container">
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <p id="review-text">What they say about us</p>
+        </div>
+    </div>
+
+    <div class="question_container">
+        <div class="text">
+            <h6>BLOG</h6>
+            <h1>FREQUENTLY <br> ASKED <br> QUESTION</h1>
+            <h5>What our clients usually asked about <br> our services and tours</h5>
+        </div>
+        <div id="faq-container">
+            <div class="faq-container">
+                <div class="question">
+                    <span class="question-text">What type of travel packages does Vacasky offer?</span>
+                    <i class="fas fa-arrow-down arrow-icon"></i>
+                </div>
+                <div class="answer">
+                    <p class="answer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eius, error
+                        iste ab, mollitia asperiores optio maiores deserunt alias dolores omnis veniam, dolor illo! Quis
+                        delectus pariatur omnis aliquid corporis</p>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="question">
+                    <span class="question-text">How do i book a trip with Vacasky?</span>
+                    <i class="fas fa-arrow-down arrow-icon"></i>
+                </div>
+                <div class="answer">
+                    <p class="answer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, iure, sint nam
+                        atque dolore illo explicabo odio aut, alias eaque recusandae rem ad animi dignissimos eligendi?
+                        Pariatur enim nesciunt quam!</p>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="question">
+                    <span class="question-text">What is the payment process for Vacasky?</span>
+                    <i class="fas fa-arrow-down arrow-icon"></i>
+                </div>
+                <div class="answer">
+                    <p class="answer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, iure, sint nam
+                        atque dolore illo explicabo odio aut, alias eaque recusandae rem ad animi dignissimos eligendi?
+                        Pariatur enim nesciunt quam!</p>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="question">
+                    <span class="question-text">How to cancel my booking in Vacasky?</span>
+                    <i class="fas fa-arrow-down arrow-icon"></i>
+                </div>
+                <div class="answer">
+                    <p class="answer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, iure, sint nam
+                        atque dolore illo explicabo odio aut, alias eaque recusandae rem ad animi dignissimos eligendi?
+                        Pariatur enim nesciunt quam!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-img">
+        <div id="sign_up">
+            <h1>START YOUR ADVENTURE</h1>
+            <h5>Sign up for our newsletter and recieve exclusive travel deals, unsider tips, and destination <br> inspiration. Don't miss out on the adventure - join our mailing list today</h5>
+            <div class="input">
+            <input type="email" id="email" placeholder="Enter your email address here ..." pattern=".+@example\.com" size="30" >
+            <button class="subscribe_btn">Subscribe</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <img src="/img/logo.png" alt="logo">
+        <div>
+            <ul id="footer-navigation">
+                <li><a class="active" href="#">Destinations</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>&copy; 2024 Vacasky. All rights reserved.</p>
+        <p>Privacy Policy | Terms & Condition</p>
+    </div>
+</body>
+
+</html>
