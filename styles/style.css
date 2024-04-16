@@ -771,6 +771,9 @@ input::placeholder {
         top: 300px; 
         left: 0px;
     }
+    #footer-navigation{
+        display: none;
+    }
 }
 
 

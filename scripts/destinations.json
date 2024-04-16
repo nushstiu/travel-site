@@ -1,32 +1,44 @@
-[    
+[
     {
-        "id": 1,
-        "name": "Japan",
-        "price": ""
-    },
-    {
-        "id": 2,
-        "name": "China",
-        "price": ""
-    },
-    {
-        "id": 3,
+        "id" : 1,
         "name": "Indonesia",
-        "price": ""
+        "packages": 20,
+        "priceRange": "2,000 - 2,500",
+        "description": "Welcome to Indonesia, an enchanting archipelago where adventure meets tranquility."
     },
     {
-        "id": 4,
-        "name": "South Korea",
-        "price": ""
+        "id" : 2,
+        "name": "Japan",
+        "packages": 20,
+        "priceRange": "1,500 - 2,000",
+        "description": "Welcome to Japan, a land where tradition and modernity blend seamlessly to create a captivating tapestry of culture, cuisine, and natural beauty. Nestled in the heart of East Asia, Japan offers travelers an enchanting journey through ancient temples, bustling metropolises, and serene landscapes."
     },
     {
-        "id": 5,
-        "name": "Philippines",
-        "price": ""
+        "id" : 4,
+        "name": "China",
+        "packages": 20,
+        "priceRange": "1,000 - 2,500",
+        "description": "Immerse yourself in the vibrant tapestry of culture, history, and modernity that is China. From the iconic Great Wall snaking across ancient landscapes to the bustling metropolises pulsating with life, China offers travelers a kaleidoscope of experiences."
     },
     {
-        "id": 1,
+        "id" : 3,
         "name": "Thailand",
-        "price": ""
+        "packages": 20,
+        "priceRange": "500 - 8000",
+        "description": "Experience the vibrant tapestry of Thailand with our expertly crafted travel packages."
+    },
+    {
+        "id" : 5,
+        "name": "South Korea",
+        "packages": 20,
+        "priceRange": "500 - 1,000",
+        "description": "Experience the dynamic fusion of ancient tradition and cutting-edge modernity in South Korea"
+    },
+    {
+        "id" : 6,
+        "name": "Philippines",
+        "packages": 20,
+        "priceRange": "500 - 1,500",
+        "description": "Discover the vibrant culture influenced by a blend of indigenous traditions, Spanish colonial heritage, and Asian influences. Delight your taste buds with the rich flavors of Filipino cuisine, known for its savory dishes and delightful desserts."
     }
 ]

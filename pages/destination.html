@@ -18,8 +18,10 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="icon" href="/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/styles/destination.css">
-    <script type="module" defer src="/scripts/script.js"></script>
+    <script type="module" defer src="/scripts/destinations.js"></script>
+    <title>Vacasky</title>
 </head>
 
 <body>
@@ -55,7 +57,7 @@
             <h1>POPULAR DESTINATIONS</h1>
         </div>
         <div class="right">
-            <input type="text" placeholder="Search" alt="search" id="searchIcon" oninput="filterProducts(this.value)">
+            <input type="text" id="searchInput" placeholder="Search" ><!-- oninput="filterProducts(value)" -->
             <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
         </div>
     </div>
@@ -68,70 +70,8 @@
     </div>
 
     <div class="destination">
-        <div class="row1">
-            <div class="book book1">
-                <div class="book1_content">
-                    <h1>Indonesia</h1>
-                    <span> <i class="fa-solid fa-location-dot"></i> 20 packages | <i
-                            class="fa-solid fa-dollar-sign"></i> 2,000 - 2,500</span>
-                </div>
-                <div class="overlay">
-                    <div class="text">
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="book book2">
-                <div class="book2_content">
-                    <h1>Japan</h1>
-                    <span> <i class="fa-solid fa-location-dot"></i> 20 packages | <i
-                            class="fa-solid fa-dollar-sign"></i> 1,500 - 2,000</span>
-                    <h4>Welcome to Japan, a land where tradition and modernity blend seamlessly to create a captivating
-                        tapestry of culture, cuisine, and natural beauty. Nestled in the heart of East Asia, Japan
-                        offers travelers an enchanting journey through ancient temples, bustling metropolises, and
-                        serene landscapes.</h4>
-                </div>
-            </div>
-        </div>
-        <div class="row2">
-                <div class="book book3">
-                    <div class="book1_content">
-                        <h1>Thailand</h1>
-                        <span> <i class="fa-solid fa-location-dot"></i> 20 packages | <i
-                                class="fa-solid fa-dollar-sign"></i> 500 - 8000</span>
-                    </div>
-                </div>
-                <div class="book book4">
-                    <div class="book1_content">
-                        <h1>South Korea</h1>
-                        <span> <i class="fa-solid fa-location-dot"></i> 20 packages | <i
-                                class="fa-solid fa-dollar-sign"></i> 500 - 1,000</span>
-                    </div>
-            </div>
-            <div class="book book5">
-                <div class="book2_content">
-                    <h1>China</h1>
-                    <span> <i class="fa-solid fa-location-dot"></i> 20 packages | <i
-                            class="fa-solid fa-dollar-sign"></i> 1,000 - 2,500</span>
-                    <h4>
-                        Immerse yourself in the vibrant tapestry of culture, history, and modernity that is China. From
-                        the iconic Great Wall snaking across ancient landscapes to the bustling metropolises pulsating
-                        with life, China offers travelers a kaleidoscope of experiences.</h4>
-                </div>
-            </div>
-            <div class="book book6">
-                <div class="book3_content">
-                    <h1>Philipines</h1>
-                    <span> <i class="fa-solid fa-location-dot"></i> 20 packages | <i
-                            class="fa-solid fa-dollar-sign"></i> 500 - 1,500</span>
-                    <h4>
-                        Discover the vibrant culture influenced by a blend of indigenous traditions, Spanish colonial
-                        heritage, and Asian influences. Delight your taste buds with the rich flavors of Filipino
-                        cuisine, known for its savory dishes and delightful desserts.</h4>
-                </div>
-            </div>
-        </div>
     </div>
+
     <div class="footer">
         <img src="/img/logo.png" alt="logo">
         <div>

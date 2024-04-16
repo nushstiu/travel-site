@@ -92,18 +92,3 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
   
-//search
-
-function filterProducts(text) {
-  let countryList = document.querySelectorAll('.book');
-
-  countryList.forEach(country => {
-      let countryText = country.querySelector('h1').innerText.toLowerCase();
-      if (countryText.includes(text.toLowerCase())) {
-        country.style.display = "block";
-    } else {
-        country.style.display = "none";
-      }
-  });
-}
-filterProducts('');

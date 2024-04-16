@@ -151,51 +151,72 @@ input::placeholder {
 .right i{
     font-size: 15px;
 }
+
 .destination {
     display: flex;
-    flex-direction: column;
-    margin-left: 80px;
+    flex-wrap: wrap;
     gap: 10px;
-}
-.row1{
-    display: flex;
-    gap: 20px;
-}
-.row2{
-    display: grid;
-    /* grid-gap: 10px; */
-    /* grid-template-columns: 100px 100px 100px;; */
-  }
-.row3{
-    display: flex;
-    gap: 20px; 
-}
-.book1 {
-    background-image: url(/img/carla-cervantes-mCKM9uNFhM0-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    margin-left: 80px;
+} 
+.book {
     position: relative;
+    overflow: hidden;
+}
+
+.book::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.book:hover::before {
+    opacity: 1;
+}
+
+.book1,
+.book3,
+.book4,
+.book5 {
+    width: calc(100% - 10px); 
+}
+
+.book6 {
+    width: calc(200% - 10px);
+}
+
+.book3 {
+    grid-column: span 1; 
+}
+
+.book4 {
+    grid-column: span 1;
+}
+
+.book5 {
+    grid-column: span 2; 
+}
+
+.book6 {
+    grid-column: span 2;
+}
+
+.book1 {
     height: 300px;
     width: 340px;
     padding: 20px;
     margin-bottom: 10px;
     border-radius: 10px;
-}
-
-.book1_content {
-    color: white;
-    position: absolute;
-    font-weight: 300;
-    top: 250px;
-}
-
-.book1_content h1{
-    font-weight: 300;
-    margin: 0;
-}
-.book1_content span{
-    font-weight: 200;
+    background-image: url(/img/carla-cervantes-mCKM9uNFhM0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 .book2 {
@@ -211,7 +232,6 @@ input::placeholder {
     border-radius: 10px;
 }
 
-
 .book3 {
     background-image: url(/img/eugenia-clara-_QTeGT478_8-unsplash.jpg);
     background-repeat: no-repeat;
@@ -223,9 +243,8 @@ input::placeholder {
     padding: 20px;
     margin-bottom: 10px;
     border-radius: 10px;
-    grid-column: 1 ;
-    grid-row: 1 ;
 }
+
 .book4 {
     background-image: url(/img/bundo-kim--HaW6ZYwpHs-unsplash.jpg);
     background-repeat: no-repeat;
@@ -237,9 +256,8 @@ input::placeholder {
     padding: 20px;
     margin-bottom: 10px;
     border-radius: 10px;
-    grid-column: 2;
-    grid-row: 1;
 }
+
 .book5 {
     background-image: url(/img/hanson-lu-_8EFj6ISA08-unsplash.jpg);
     background-repeat: no-repeat;
@@ -247,64 +265,135 @@ input::placeholder {
     background-position: center;
     position: relative;
     height: 300px;
-    width: 740px;
+    width: 950px;
     padding: 20px;
     margin-bottom: 10px;
-    border-radius: 10px;    
-    grid-column: 1 / 3;
-    grid-row: 2;
+    border-radius: 10px;
 }
-.book2_content{
-    color: white;
-    position: absolute;
-    font-weight: 300;
-    top: 200px;
-}
-.book2_content h1{
-    font-weight: 300;
-    margin: 0;
-}
-.book2_content span{
-    font-weight: 200;
-}
-.book2_content h4{
-    font-weight: 300;
-    font-size: 12px;
-}
+
 .book6 {
     background-image: url(/img/filippo-cesarini-FigJnrLlJPY-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 660px;
-    width: 540px;
+    height: 300px;
+    width: 950px;
     padding: 20px;
     margin-bottom: 10px;
     border-radius: 10px;
-    margin-right: 40px;
-    align-self: flex-start;
-    grid-column: 3 ;
-    grid-row: 1 / 3;
 }
-
-.book3_content {
+.book_content{
     color: white;
     position: absolute;
     font-weight: 300;
-    top: 540px;
+    top: 200px;
 }
-
-.book3_content h1{
+.book_content h1 {
     font-weight: 300;
     margin: 0;
 }
-.book3_content span{
+.book_content span {
     font-weight: 200;
 }
-.book3_content h4{
+.book_content h4 {
     font-weight: 300;
     font-size: 12px;
+}
+.book3_content,
+.book2_content,
+.book1_content {
+    color: white;
+    position: absolute;
+    font-weight: 300;
+}
+
+.book1_content h1,
+.book2_content h1,
+.book3_content h1 {
+    font-weight: 300;
+    margin: 0;
+}
+
+.book1_content span,
+.book2_content span,
+.book3_content span {
+    font-weight: 200;
+}
+.book1 h4,
+.book3 h4,
+.book4 h4{
+    display: none;
+}
+.book2_content h4,
+.book3_content h4 {
+    font-weight: 300;
+    font-size: 12px;
+}
+.book:hover .book_content {
+    display: block;
+}
+.book_button {
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+.book:hover .book_button {
+    display: block;
+}
+.country_name{
+    display: none;
+    position: absolute;
+    color: white;
+    font-weight: 300;
+    margin: 0;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-wrap: nowrap;
+}
+
+.country_span{
+    display: none;
+    position: absolute;
+    color: white;
+    font-weight: 200;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-wrap: nowrap;
+}
+.book:hover .country_name{
+    display: block;
+}
+.book:hover .country_span{
+    display: block;
+}
+.country_description{
+    display: none;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    font-weight: 200;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.book:hover .country_description{
+    display: block;
 }
 
 .footer {
@@ -382,10 +471,6 @@ input::placeholder {
     margin-left: 50px;
     margin-right: 50px;
 }
-.book {
-    display: block;
-}
-
 
 @media (max-width: 910px) {
 
