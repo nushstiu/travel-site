@@ -1,0 +1,292 @@
+*,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* font-weight: 400; */
+    font-style: normal;
+}
+*:focus {
+    outline: none;
+}
+:root {
+    --main-colour: #66b6d2;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+
+}
+
+#header img{
+    width: 20%;
+}
+#nav-navigation {
+    display: flex;
+    align-items: center;
+}
+
+#nav-navigation.active {
+    right: 0px;
+}
+
+#nav-navigation li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#nav-navigation li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+.banner_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.banner_content h1 {
+    font-size: 120px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+.banner_content a{
+    color: white;
+    text-decoration: none;
+}
+
+/* #nav-navigation li a:hover,
+   #nav-navigation li a.active {
+    color: #fb6f92;
+   } */
+
+#nav-navigation li a.active::after,
+#nav-navigation li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+#mobile .fa-solid {
+    color: #e3e6f3;
+}
+
+#close {
+    display: none;
+}
+
+.bg-img {
+    background-image: url(/img/harold-wainwright-4JHvZQSMkD4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+}
+
+.personal-info{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.personal-info .name{
+    display: flex;
+    flex-direction: column;
+}
+.name label{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.surname label{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.personal-info .surname{
+    display: flex;
+    flex-direction: column;
+}
+.content .dropdown{
+    border-radius: 5px;
+    padding: 30px;
+    margin: 0 0 0 0;
+    border-color: transparent;
+    background-color: #f7f7f7;
+    font-size: 17px;
+    color: rgb(83, 83, 83);
+    font-family: "Poppins", sans-serif;
+}
+
+.content #name{
+    border-radius: 5px;
+    padding: 30px;
+    padding-right: 240px;
+    border-color: transparent;
+    background-color: #f7f7f7;
+    font-size: 17px;
+    color: rgb(83, 83, 83);
+    font-family: "Poppins", sans-serif;
+}
+.surname #surname{
+    border-radius: 5px;
+    padding: 30px;
+    padding-right: 390px;
+    border-color: transparent;
+    background-color: #f7f7f7;
+    font-size: 17px;
+    color: rgb(83, 83, 83);
+    font-family: "Poppins", sans-serif;
+}
+label .fa-solid{
+    color: var(--main-colour);
+    font-size: 7px;
+    vertical-align: top;
+    margin-top: 6px;
+}
+.personal-contact{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.email label{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.personal-contact .email{
+    display: flex;
+    flex-direction: column;
+}
+.phone label{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.personal-contact .phone{
+    display: flex;
+    flex-direction: column;
+}
+.personal-contact input{
+    border-radius: 5px;
+    padding: 30px;
+    padding-right: 386px;
+    border-color: transparent;
+    background-color: #f7f7f7;
+    font-size: 17px;
+    color: rgb(83, 83, 83);
+    font-family: "Poppins", sans-serif;
+}
+.personal-duration{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.personal-duration .date{
+    display: flex;
+    flex-direction: column;
+}
+.personal-duration .duration{
+    display: flex;
+    flex-direction: column;
+}
+.personal-duration .destination{
+    display: flex;
+    flex-direction: column;
+}
+.personal-duration .date .select #day, #month, #year{
+    border-radius: 5px;
+    padding: 25px;
+    padding-right: 33px;
+    margin: 0 0 0 0;
+    border-color: transparent;
+    background-color: #f7f7f7;
+    font-size: 17px;
+    color: rgb(83, 83, 83);
+    font-family: "Poppins", sans-serif;
+}
+.personal-duration .duration #duration{
+    border-radius: 5px;
+    padding: 25px;
+    padding-right: 150px;
+    margin: 0 0 0 0;
+    border-color: transparent;
+    background-color: #f7f7f7;
+    font-size: 17px;
+    color: rgb(83, 83, 83);
+    font-family: "Poppins", sans-serif;
+}
+.personal-duration .destination #destination{
+    border-radius: 5px;
+    padding: 25px;
+    padding-right: 400px;
+    margin: 0 0 0 0;
+    border-color: transparent;
+    background-color: #f7f7f7;
+    font-size: 17px;
+    color: rgb(83, 83, 83);
+    font-family: "Poppins", sans-serif;
+}
+
+.personal-duration .date .select{
+    display: flex;
+    flex-direction: row;
+}
+.select-wrapper {
+    margin-right: 30px;
+}
+.date label, .duration label, .destination label{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.random {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+    gap: 30px;
+}
+.book {
+    height: 300px;
+    width: 420px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.book_content{
+    color: white;
+    position: absolute;
+    font-weight: 300;
+    top: 200px;
+}
+.random .book .book_content .h1{
+    margin-left: 0;
+    font-weight: 400;
+}
+.book_content span {
+    font-weight: 200;
+}
+h1{
+    margin-left: 100px;
+}

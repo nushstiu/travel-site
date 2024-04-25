@@ -1,0 +1,164 @@
+[
+    {
+        "id": "1",
+        "location": "Indonesia",
+        "name": "Wanderlands Bali",
+        "price": "$680",
+        "days": "13",
+        "description": "Start in Canggu and end in Ubud! With the Explorer tour Wanderlands Bali - 8 Days, you have a 8 days tour package taking you through Canggu, Indonesia and 4 other destinations in Indonesia. Wanderlands Bali - 8 Days includes accommodationin a hoteland hostel as well as an expert guide, meals, transport and more.",
+        "img": "../img/Indonesia/tour1.jpg"
+    },
+    {
+        "id": "2",
+        "location": "Japan",
+        "name": "Kyoto Cultural Tour",
+        "price": "$209",
+        "days": "1",
+        "description": "Welcome to Kyoto, the cultural capital of Japan and one of the most culturally diverse cities in Asia! With thousands of Buddhist temples, mesmerising gardens, imperial palaces, Shinto shrines and old wooden houses, the city could be called an open-air museum where one could wander for weeks to discover all its wonders.",
+        "img": "../img/Japan/tour1.jpg"
+    },
+    {
+        "id": "3",
+        "location": "China",
+        "name": "China Golden Trio",
+        "price": "$1,239",
+        "days": "8",
+        "description": "This 8 days tour takes you to the ancient and modern capitals of China. Visit Beijing, Xi’an and Shanghai and experience incredible history, while marveling at the breathtaking pace of modern China. Be fascinated by Beijing’s balance of contemporary and past glories, including the Great Wall, Forbidden City and Summer Palace.",
+        "img": "../img/China/tour1.jpg"
+    },
+    {
+        "id": "4",
+        "location": "Thailand",
+        "name": "Bangkok to Chiang",
+        "price": "$679",
+        "days": "7",
+        "description": "Explore the best of Thailand in just 7 days! From the bustling streets of Bangkok to the serene landscapes of Chiang Mai, this express tour offers an unforgettable journey through Thailand's rich culture, history, and natural beauty.This captivating adventure takes you from the bustling streets of Bangkok to the serene beauty of Chiang Mai",
+        "img": "../img/Thai/thai1.jpg"
+    },
+    {
+        "id": "5",
+        "location": "South Korea",
+        "name": "Korea Express",
+        "price": "$1,310",
+        "days": "6",
+        "description": "Embark on an exhilarating journey through the heart of South Korea! From the vibrant streets of Seoul to the tranquil beauty of Jeju Island, experience the best that South Korea has to offer in just 6 days.",
+        "img": "../img/Korea/tour1.jpg"
+    },
+    {
+        "id": "6",
+        "location": "Philippines",
+        "name": "A Week In Palawan",
+        "price": "$892",
+        "days": "7",
+        "description": "Discover the breathtaking beauty of Palawan, one of the Philippines' most enchanting destinations! With pristine beaches, crystal-clear waters, and lush jungles, Palawan offers a paradise-like experience that will leave you awe-inspired.",
+        "img": "../img/Philipines/tour1.jpg"
+    },
+    {
+        "id": "2",
+        "location": "Japan",
+        "name": "Cherry Blossom Festival",
+        "price": "$5,555",
+        "days": "13",
+        "description": "Experience the magic of Japan's cherry blossom season with this unforgettable tour! Witness the country's iconic cherry trees in full bloom as you explore historic temples, stroll through picturesque gardens, and immerse yourself in the rich culture of Japan.",
+        "img": "../img/Japan/tour2.jpg"
+    },
+    {
+        "id": "3",
+        "location": "China",
+        "name": "China Panda Tour",
+        "price": "$2,000",
+        "days": "12",
+        "description": "Embark on a once-in-a-lifetime adventure to see China's beloved giant pandas in their natural habitat! This 12-day tour takes you to the heart of panda country, where you'll have the chance to observe these iconic creatures up close and learn about conservation efforts to protect them.",
+        "img": "../img/China/tour2.jpg"
+    },
+    {
+        "id": "3",
+        "location": "Thailand",
+        "name": "Thai Island Hopper West",
+        "price": "$593",
+        "days": "8",
+        "description": "Explore the stunning islands of western Thailand on this unforgettable island-hopping adventure! From the crystal-clear waters of Koh Phi Phi to the lush jungles of Koh Lanta, discover the beauty and diversity of Thailand's island paradise.",
+        "img": "../img/Thai/tour2.jpg"
+    },
+    {
+        "id": "5",
+        "location": "South Korea",
+        "name": "Past And Present Tour",
+        "price": "$3,146",
+        "days": "9",
+        "description": "Immerse yourself in the rich history and vibrant culture of South Korea on this captivating tour! From ancient palaces and traditional villages to modern cities and bustling markets, experience the best of both past and present in just 9 days.",
+        "img": "../img/Korea/tour2.jpg"
+    },
+    {
+        "id": "6",
+        "location": "Philippines",
+        "name": "Ifugo Villages Trek",
+        "price": "$206",
+        "days": "4",
+        "description": "Embark on an unforgettable trekking adventure through the breathtaking Ifugao villages of the Philippines! Discover the rich cultural heritage of the Ifugao people as you hike through terraced rice fields, lush forests, and picturesque villages nestled among the mountains.",
+        "img": "../img/Philipines/tour2.jpg"
+    },
+    {
+        "id": "1",
+        "location": "Indonesia",
+        "name": "Komodo Adventure",
+        "price": "$1,047",
+        "days": "9",
+        "description": "Embark on an epic adventure to the islands of Komodo and Flores, home to some of Indonesia's most spectacular landscapes and wildlife! From hiking to secluded beaches and snorkeling in crystal-clear waters to encountering Komodo dragons in their natural habitat, this 9-day tour offers an unforgettable experience for nature lovers and adventurers alike.",
+        "img": "../img/Indonesia/tour2.jpg"
+    },
+    {
+        "id": "2",
+        "location": "Japan",
+        "name": "Tokyo Anime Adventure",
+        "price": "$1,015",
+        "days": "7",
+        "description": "Join us for the ultimate Tokyo Anime Adventure! Explore iconic landmarks such as the Inokashira Park, Nakano Broadway, the stairs from “Your Name” and wander the lively districts of Akihabara and Ikebukuro. Cruise along the Sumida River, catch 'em all at the Pokémon Center Mega Tokyo, and enjoy Namjatown, an indoor theme park.",
+        "img": "../img/Japan/tour3.jpeg"
+    },
+    {
+        "id": "1",
+        "location": "Indonesia",
+        "name": "Ubud Tour",
+        "price": "$1,047",
+        "days": "9",
+        "description": "Take a day tour around the Ubud area to check out some of Bali's most popular attractions. Stop at Tegalalang Rice Terrace, Tegenungan Waterfall, Sacred Monkey Forest Sanctuary, an art market where you can shop for souvenirs, Puri Saren Palace (Ubud Palace), and Tirta Empul Temple, known for its natural springs.",
+        "img": "../img/Indonesia/tour3.jpg"
+    },
+    {
+        "id": "3",
+        "location": "China",
+        "name": "Best Yunnan Tour",
+        "price": "$2,000",
+        "days": "12",
+        "description": "Discover the breathtaking landscapes and rich cultural heritage of Yunnan, China's most diverse province! From the majestic peaks of the Himalayas to the lush jungles of Xishuangbanna, explore the natural beauty and cultural treasures of this enchanting region.",
+        "img": "../img/China/tour3.jpg"
+    },
+    {
+        "id": "3",
+        "location": "Thailand",
+        "name": "Explore Northern Thailand",
+        "price": "$765",
+        "days": "8",
+        "description": "Embark on an unforgettable journey through Northern Thailand's most iconic destinations! From the ancient temples of Chiang Mai to the lush jungles of Chiang Rai, experience the rich culture, history, and natural beauty of this enchanting region.",
+        "img": "../img/Thai/tour3.jpg"
+    },
+    {
+        "id": "5",
+        "location": "South Korea",
+        "name": "Seoul K-Pop Discovery",
+        "price": "$4,709",
+        "days": "8",
+        "description": "Immerse yourself in the vibrant world of K-Pop with this unforgettable tour of Seoul! From exclusive backstage tours and dance workshops to live performances and meet-and-greets with your favorite K-Pop idols, experience the ultimate K-Pop adventure in the heart of South Korea.",
+        "img": "../img/Korea/tou3.jpg"
+    },
+    {
+        "id": "6",
+        "location": "Philippines",
+        "name": "Philippines West",
+        "price": "$1,495",
+        "days": "10",
+        "description": "Experience the beauty of the Philippines' western islands on this unforgettable tour! From the stunning beaches of Boracay to the pristine reefs of Palawan, discover the natural wonders and cultural treasures of this enchanting region.",
+        "img": "../img/Philipines/tour3.jpg"
+    }
+]

@@ -191,11 +191,6 @@ body {
     padding-top: 20px;
 }
 
-.swiper {
-    width: 600px;
-    height: 300px;
-}
-
 #product1 .overlay {
     margin-top: 20px;
     font-size: 80px;
@@ -354,7 +349,10 @@ body {
     margin-top: 10px;
     padding: 10px;
 }
-
+.book1 .book1_content button a{
+    text-decoration: none;
+    color: black;
+}
 .book2 {
     background-image: url(/img/pexels-agung-pandit-wiguna-889954.jpg);
     background-repeat: no-repeat;
@@ -390,6 +388,10 @@ body {
     left: 150px;
 }
 
+.book2 .book2_content button a{
+    text-decoration: none;
+    color: white;
+}
 .trip .trip_container {
     height: 200px;
     background-color: #f3f3f3;

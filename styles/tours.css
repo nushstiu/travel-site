@@ -1,0 +1,399 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --main-colour: #66b6d2;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+
+}
+
+#header img{
+    width: 20%;
+}
+#nav-navigation {
+    display: flex;
+    align-items: center;
+}
+
+#nav-navigation.active {
+    right: 0px;
+}
+
+#nav-navigation li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#nav-navigation li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+.banner_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.banner_content h1 {
+    font-size: 120px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+.banner_content a{
+    color: white;
+    text-decoration: none;
+}
+
+/* #nav-navigation li a:hover,
+   #nav-navigation li a.active {
+    color: #fb6f92;
+   } */
+
+#nav-navigation li a.active::after,
+#nav-navigation li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+#mobile .fa-solid {
+    color: #e3e6f3;
+}
+
+#close {
+    display: none;
+}
+
+.bg-img {
+    background-image: url(/img/Indonesia/pexels-timur-kozmenko-2474690.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+}
+.search{
+    margin-right: 50px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.search .right{
+    margin-top: 40px;
+}
+.section{
+    margin-left: 80px;
+    margin-bottom: 30px;
+}
+.section  .all{
+    height: 40px;
+    padding: 0 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+.section button{
+    height: 40px;
+    padding: 0 20px;
+    background-color: #f3f3f3;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+.input{
+    margin-top: 20px;
+}
+input{
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    outline: none;
+    font-size: 20px;
+}
+input::placeholder {
+    color: gray;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+.right i{
+    font-size: 15px;
+}
+/* .tour-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+} */
+.tour-img img{
+    height: 100%;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.tours{
+    display: flex;
+    margin: 40px;
+}
+.tour-content{
+    margin-left: 40px;
+    width: 1360px;
+}
+.tour-content h1{
+    margin: 0;
+    font-weight: 500;
+}
+.tour-content p{
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 50px;
+}
+.tour-content span{
+    color: var(--main-colour);
+}
+.book-block{
+    width: 500px;
+    align-self: center;
+    margin-left: 50px;
+    justify-content: space-between;
+}
+.book-block > * {
+    margin-bottom: 10px;
+}
+.btn > *{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.book-block span{
+    font-weight: 300;
+}
+.btn .book_now{
+    height: 40px;
+    padding: 0 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+.btn .book_now a{
+    text-decoration: none;
+    color: white;
+}
+.btn .learn{
+    height: 40px;
+    padding: 0 20px;
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer {
+    background-color: #333;   
+    padding: 50px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center; 
+}
+
+.footer img {
+    height: 40px; 
+    width: auto; 
+    margin-left: 20px;
+}
+
+#footer-navigation {
+    list-style-type: none;  
+    margin: 0;
+    padding: 0;
+}
+
+#footer-navigation li {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+#footer-navigation li:last-child {
+    margin-right: 0;
+}
+
+#footer-navigation li a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: 300; 
+    font-size: 15px;
+    transition: color 0.3s; 
+}
+
+#footer-navigation li a:hover {
+    color: var(--main-colour); 
+}
+
+.fa-brands {
+    color: #fff; 
+    font-size: 24px;
+    margin-right: 20px; 
+}
+.social-media-icons {
+    display: flex;
+    align-items: center; 
+}
+.social-media-icons i {
+    margin-right: 10px;
+}
+
+.footer-copyright {
+    background-color: #333; 
+    display: flex; 
+    justify-content: space-between;
+    color: #f3f3f3;
+    padding: 10px 20px;
+    position: relative; 
+}
+
+.footer-copyright:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 70px;
+    right: 70px; 
+    border-top: 1px solid gray;
+}
+.footer-copyright p{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+@media (max-width: 960px) {
+
+    #nav-navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: absolute;
+        z-index: 200;
+        top: 0;
+        right: -310px;
+        height: 100vh;
+        width: 300px;
+        background-color: var(--main-colour);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #nav-navigation li {
+        margin-bottom: 25px;
+    }
+
+    .banner_content h1{
+        font-size: 60px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #lg-user {
+        display: none;
+    }
+    .right{
+        width: 50%;
+    }
+    #footer-navigation{
+        display: none;
+    }
+    .tours {
+        flex-direction: column;
+        margin: 20px;
+      }
+    
+      .tour-content {
+        margin-left: 0;
+        width: auto;
+        margin-top: 20px;
+      }
+    
+      .book-block {
+        width: auto;
+        margin-left: 0;
+        justify-content: center;
+      }
+    
+      .tour-img img {
+        width: 100%;
+        height: auto;
+      }
+    
+      .btn {
+        text-align: center;
+      }
+
+}
+@media screen and (max-width: 768px) {
+    .tours {
+        width: 100%;
+    }
+}
+
+@media (max-width: 477px) {
+
+    #section-p1 {
+        padding: 20px;
+    }
+
+    #header {
+        padding: 10px 30px;
+    }
+}

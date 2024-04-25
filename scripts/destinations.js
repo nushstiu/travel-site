@@ -1,83 +1,115 @@
+//responisve navbar
+let bar = document.getElementById('bar');
+let close = document.getElementById('close');
+let nav = document.getElementById('nav-navigation');
+
+if (bar) {
+  bar.addEventListener('click', () => {
+    nav.classList.add('active');
+  });
+}
+
+if (close) {
+  close.addEventListener('click', () => {
+    nav.classList.remove('active');
+  });
+}
+
 import destinations from './destinations.json' assert {type: 'json'};
 
 let destinationContainer = document.querySelector('.destination');
 
 //elementele 
-function createBook(destination) {
-    let book = document.createElement('div');
-    book.classList.add('book');
+function createBook() {
+    destinations.forEach((locations) => {
+        let location = document.createElement('div');
+        location.classList.add('book');
+        let content = document.createElement('div');
+        content.classList.add('book_content');
+        content.innerHTML = `
+            <h1>${locations.name}</h1>
+            <span> <i class="fa-solid fa-location-dot"></i> ${locations.packages} packages | <i class="fa-solid fa-dollar-sign"></i> ${locations.priceRange}</span>
+            <h4>${locations.description}</h4>
+        `;
+        destinationContainer.appendChild(location);
+        location.appendChild(content);
 
-    let content = document.createElement('div');
-    content.classList.add('book_content');
+    // let book = document.createElement('div');
+    // book.classList.add('book');
 
-    let title = document.createElement('h1');
-    title.textContent = destination.name;
+    // let content = document.createElement('div');
+    // content.classList.add('book_content');
 
-    let span = document.createElement('span');
-    span.innerHTML = `<i class="fa-solid fa-location-dot"></i> ${destination.packages} packages | <i class="fa-solid fa-dollar-sign"></i> ${destination.priceRange}`;
+    // let title = document.createElement('h1');
+    // title.textContent = destination.name;
 
-    let description = document.createElement('h4');
-    description.textContent = destination.description;
+    // let span = document.createElement('span');
+    // span.innerHTML = `<i class="fa-solid fa-location-dot"></i> ${destination.packages} packages | <i class="fa-solid fa-dollar-sign"></i> ${destination.priceRange}`;
 
-    content.appendChild(title);
-    content.appendChild(span);
-    content.appendChild(description);
-    book.appendChild(content);
+    // let description = document.createElement('h4');
+    // description.textContent = destination.description;
+
+    // content.appendChild(title);
+    // content.appendChild(span);
+    // content.appendChild(description);
+    // book.appendChild(content);
 
     let button = document.createElement('button');
     button.classList.add('book_button');
     button.textContent = 'View Details';
     button.addEventListener('click', () => {
-        redirect(destination.name);
+        redirect(locations.name);
     });
-    book.appendChild(button);
+    location.appendChild(button);
 
     let name = document.createElement('h1');
     name.classList.add('country_name');
-    name.textContent = destination.name;
-    book.appendChild(name);
+    name.textContent = locations.name;
+    location.appendChild(name);
 
     let span2 = document.createElement('span');
     span2.classList.add('country_span');
-    span2.innerHTML = `<i class="fa-solid fa-location-dot"></i> ${destination.packages} packages | <i class="fa-solid fa-dollar-sign"></i> ${destination.priceRange}`;
-    book.appendChild(span2);
+    span2.innerHTML = `<i class="fa-solid fa-location-dot"></i> ${locations.packages} packages | <i class="fa-solid fa-dollar-sign"></i> ${locations.priceRange}`;
+    location.appendChild(span2);
 
     let description2 = document.createElement('h4');
     description2.classList.add('country_description');
-    description2.textContent = destination.description;
-    book.appendChild(description2);
+    description2.textContent = locations.description;
+    location.appendChild(description2);
 
-    switch (destination.name) {
+    switch (locations.name) {
         case 'Indonesia':
-            book.classList.add('book1');
+            location.classList.add('book1');
             break;
         case 'Japan':
-            book.classList.add('book2');
+            location.classList.add('book2');
             break;
         case 'Thailand':
-            book.classList.add('book3');
+            location.classList.add('book3');
             break;
         case 'South Korea':
-            book.classList.add('book4');
+            location.classList.add('book4');
             break;
         case 'China':
-            book.classList.add('book5');
+            location.classList.add('book5');
             break;
         case 'Philippines':
-            book.classList.add('book6');
+            location.classList.add('book6');
             break;
     }
 
-    book.addEventListener('mouseenter', () => {
+    location.addEventListener('mouseenter', () => {
         content.style.display = 'none';
     });
 
-    book.addEventListener('mouseleave', () => {
+    location.addEventListener('mouseleave', () => {
         content.style.display = 'block';
     });
 
-    return book;
+    return location;
+})
 }
+createBook();
 
 function redirect(countryName) {
     switch (countryName) {

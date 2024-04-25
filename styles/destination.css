@@ -90,7 +90,6 @@ body {
 #close {
     display: none;
 }
-
 .bg-img {
     background-image: url(/img/pexels-hugo-heimendinger-2984369.jpg);
     background-repeat: no-repeat;
@@ -100,6 +99,7 @@ body {
     height: 100vh;
     min-height: 500px;
 }
+
 .search{
     margin-right: 50px;
     margin-left: 80px;
@@ -385,6 +385,7 @@ input::placeholder {
     display: none;
     position: absolute;
     color: white;
+    text-align: center;
     font-size: 12px;
     font-weight: 200;
     top: 45%;
@@ -558,5 +559,20 @@ input::placeholder {
     .book3_content h4 {
         font-size: 12px; 
     }
+    #footer-navigation{
+        display: none;
+    }
 
+}
+
+
+@media (max-width: 477px) {
+
+    #section-p1 {
+        padding: 20px;
+    }
+
+    #header {
+        padding: 10px 30px;
+    }
 }

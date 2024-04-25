@@ -48,11 +48,12 @@ countries.map(item => selectItem.appendChild(new Option(item.name, item.id)).clo
 
 //swiper
 const swiper = new Swiper('.swiper', {
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
+    dynamicBullets: true,
   },
 
   navigation: {
