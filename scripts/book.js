@@ -28,6 +28,26 @@ function displayPackages(country) {
             <h1 class="h1">${tour.name}</h1>
             <span> <i class="fa-solid fa-location-dot"></i> ${tour.location} packages | <i class="fa-solid fa-dollar-sign"></i> Start from ${tour.price}</span>
         `;
+        let checkedBlock = document.createElement('div');
+        checkedBlock.classList.add('checked-block');
+        let checkedImg = document.createElement('img');
+        checkedImg.classList.add('check');
+        let checked = JSON.parse(localStorage.getItem('checked')) || [];
+        checkedImg.src = checked.some(item => item.id === tour.id) ? '../img/checked.png' : tour.fav;
+
+        checkedImg.addEventListener('click', () => {
+            const index = checked.findIndex(item => item.id === tour.id);
+            if (index !== -1) {
+                checked.splice(index, 1);
+            } else {
+                checked.push({ id: tour.id });
+            }
+            localStorage.setItem('checked', JSON.stringify(checked));
+            checkedImg.src = checked.some(item => item.id === tour.id) ? '../img/checked.png' : tour.fav;
+        });
+
+        checkedBlock.appendChild(checkedImg);
+        location.appendChild(checkedBlock);
         location.appendChild(content);
         random.appendChild(location);
     });
