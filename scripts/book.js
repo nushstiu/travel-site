@@ -18,6 +18,10 @@ function displayPackages(country) {
     random.classList.add('random');
     packagesContainer.appendChild(random);
 
+    let packages = document.createElement('div');
+    packages.classList.add('packages');
+    random.appendChild(packages);
+
     filteredPackages.forEach(tour => {
         let location = document.createElement('div');
         location.classList.add('book');
@@ -30,27 +34,55 @@ function displayPackages(country) {
         `;
         let checkedBlock = document.createElement('div');
         checkedBlock.classList.add('checked-block');
-        let checkedImg = document.createElement('img');
-        checkedImg.classList.add('check');
+        checkedBlock.innerHTML = `<img src="${tour.fav}" class="check">`;
+        let checkedImg = checkedBlock.querySelector('.check');
         let checked = JSON.parse(localStorage.getItem('checked')) || [];
-        checkedImg.src = checked.some(item => item.id === tour.id) ? '../img/checked.png' : tour.fav;
-
-        checkedImg.addEventListener('click', () => {
-            const index = checked.findIndex(item => item.id === tour.id);
-            if (index !== -1) {
-                checked.splice(index, 1);
+        if (checked.some(item => item.id === tour.id)) {
+            checkedImg.src = '../img/checked.png';
+        } else {
+            checkedImg.src = tour.fav;
+        }
+        let selected = checked.some(item => item.id === tour.id);
+        location.addEventListener('click', () => {
+            if (selected) {
+                checkedImg.src = tour.fav;
+                checked = checked.filter(item => item.id !== tour.id);
             } else {
+                checkedImg.src = '../img/checked.png';
                 checked.push({ id: tour.id });
             }
+            selected = !selected;
             localStorage.setItem('checked', JSON.stringify(checked));
-            checkedImg.src = checked.some(item => item.id === tour.id) ? '../img/checked.png' : tour.fav;
         });
 
-        checkedBlock.appendChild(checkedImg);
         location.appendChild(checkedBlock);
         location.appendChild(content);
-        random.appendChild(location);
+        packages.appendChild(location);
+
     });
+    let booking = document.createElement('div');
+    booking.classList.add('booking');
+
+
+    let terms = document.createElement('div');
+    terms.classList.add('terms');
+    terms.innerHTML = `
+    <div class=t>
+    <input type="checkbox" id="terms">
+    <label for="terms">Get me a <a href="#">travel insurance</a> that covers my whole trip safety and cancellation. </label>
+    </div>    
+    <input type="checkbox" id="terms">
+        <label for="terms">I have read all <a href="#">terms and conditions</a> and <a href="#">privacy policy</a .</label>
+    
+    `;
+
+    let bookBtn = document.createElement('button');
+    bookBtn.classList.add('book_now');
+    bookBtn.innerHTML = `<a href="book.html">Book now</a>`;
+
+    booking.appendChild(terms);
+    random.appendChild(booking);
+    booking.appendChild(bookBtn);
 }
 
 let selectItem = [...new Set(packagesData.map(tour => tour.location))];

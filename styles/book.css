@@ -1,4 +1,5 @@
-*,body {
+*,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,9 +7,11 @@
     /* font-weight: 400; */
     font-style: normal;
 }
+
 *:focus {
     outline: none;
 }
+
 :root {
     --main-colour: #66b6d2;
 }
@@ -21,9 +24,10 @@
 
 }
 
-#header img{
+#header img {
     width: 20%;
 }
+
 #nav-navigation {
     display: flex;
     align-items: center;
@@ -46,6 +50,7 @@
     color: white;
     transition: 0.3s ease;
 }
+
 .banner_content {
     display: flex;
     justify-content: center;
@@ -61,7 +66,8 @@
     color: white;
     margin: 0;
 }
-.banner_content a{
+
+.banner_content a {
     color: white;
     text-decoration: none;
 }
@@ -85,6 +91,7 @@
     display: none;
     align-items: center;
 }
+
 #mobile .fa-solid {
     color: #e3e6f3;
 }
@@ -103,29 +110,34 @@
     min-height: 500px;
 }
 
-.personal-info{
+.personal-info {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-bottom: 40px;
 }
-.personal-info .name{
+
+.personal-info .name {
     display: flex;
     flex-direction: column;
 }
-.name label{
+
+.name label {
     margin-bottom: 10px;
     font-weight: 500;
 }
-.surname label{
+
+.surname label {
     margin-bottom: 10px;
     font-weight: 500;
 }
-.personal-info .surname{
+
+.personal-info .surname {
     display: flex;
     flex-direction: column;
 }
-.content .dropdown{
+
+.content .dropdown {
     border-radius: 5px;
     padding: 30px;
     margin: 0 0 0 0;
@@ -136,7 +148,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-.content #name{
+.content #name {
     border-radius: 5px;
     padding: 30px;
     padding-right: 240px;
@@ -146,7 +158,8 @@
     color: rgb(83, 83, 83);
     font-family: "Poppins", sans-serif;
 }
-.surname #surname{
+
+.surname #surname {
     border-radius: 5px;
     padding: 30px;
     padding-right: 390px;
@@ -156,35 +169,42 @@
     color: rgb(83, 83, 83);
     font-family: "Poppins", sans-serif;
 }
-label .fa-solid{
+
+label .fa-solid {
     color: var(--main-colour);
     font-size: 7px;
     vertical-align: top;
     margin-top: 6px;
 }
-.personal-contact{
+
+.personal-contact {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-bottom: 40px;
 }
-.email label{
+
+.email label {
     margin-bottom: 10px;
     font-weight: 500;
 }
-.personal-contact .email{
+
+.personal-contact .email {
     display: flex;
     flex-direction: column;
 }
-.phone label{
+
+.phone label {
     margin-bottom: 10px;
     font-weight: 500;
 }
-.personal-contact .phone{
+
+.personal-contact .phone {
     display: flex;
     flex-direction: column;
 }
-.personal-contact input{
+
+.personal-contact input {
     border-radius: 5px;
     padding: 30px;
     padding-right: 386px;
@@ -194,25 +214,32 @@ label .fa-solid{
     color: rgb(83, 83, 83);
     font-family: "Poppins", sans-serif;
 }
-.personal-duration{
+
+.personal-duration {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-bottom: 40px;
 }
-.personal-duration .date{
+
+.personal-duration .date {
     display: flex;
     flex-direction: column;
 }
-.personal-duration .duration{
+
+.personal-duration .duration {
     display: flex;
     flex-direction: column;
 }
-.personal-duration .destination{
+
+.personal-duration .destination {
     display: flex;
     flex-direction: column;
 }
-.personal-duration .date .select #day, #month, #year{
+
+.personal-duration .date .select #day,
+#month,
+#year {
     border-radius: 5px;
     padding: 25px;
     padding-right: 33px;
@@ -223,7 +250,8 @@ label .fa-solid{
     color: rgb(83, 83, 83);
     font-family: "Poppins", sans-serif;
 }
-.personal-duration .duration #duration{
+
+.personal-duration .duration #duration {
     border-radius: 5px;
     padding: 25px;
     padding-right: 150px;
@@ -234,7 +262,8 @@ label .fa-solid{
     color: rgb(83, 83, 83);
     font-family: "Poppins", sans-serif;
 }
-.personal-duration .destination #destination{
+
+.personal-duration .destination #destination {
     border-radius: 5px;
     padding: 25px;
     padding-right: 400px;
@@ -246,57 +275,123 @@ label .fa-solid{
     font-family: "Poppins", sans-serif;
 }
 
-.personal-duration .date .select{
+.personal-duration .date .select {
     display: flex;
     flex-direction: row;
 }
+
 .select-wrapper {
     margin-right: 30px;
 }
-.date label, .duration label, .destination label{
+
+.date label,
+.duration label,
+.destination label {
     margin-bottom: 10px;
     font-weight: 500;
 }
-.random {
+
+.packages {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     gap: 30px;
 }
+
 .book {
+    position: relative;
+    background-size: cover;
     height: 300px;
     width: 420px;
     padding: 20px;
     margin-bottom: 10px;
     border-radius: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
-.book_content{
+
+.book::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; 
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 50%, rgba(0, 0, 0, 0) 100%);
+    z-index: -1;
+    border-radius: inherit;
+}
+
+.book_content {
     color: white;
     position: absolute;
     font-weight: 300;
     top: 200px;
 }
-.random .book .book_content .h1{
+
+.random .book .book_content .h1 {
     margin-left: 0;
     font-weight: 400;
 }
+
 .book_content span {
     font-weight: 200;
 }
-h1{
+
+h1 {
     margin-left: 100px;
 }
 
-.checked-block .check{
+.checked-block .check {
     position: absolute;
-    top: 0; 
-    left: 0; 
-    z-index: 1; 
+    top: 0;
+    left: 0;
+    z-index: 1;
     padding: 10px;
-    width: 40px;
-    height: 40px; 
+    width: 50px;
+    height: 50px;
+}
+.terms {
+    display: block;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+.terms .t {
+    margin-bottom: 10px;
+}
+.terms label{
+    font-size: 12px;
+    font-weight: 300;
+}
+.terms input[type="checkbox"] {
+    outline: none;
+	content: none;
+    width: 15px;
+    height: 15px; 
+    vertical-align: middle;
+    background-color: gray;
+    border: none;
+}
+.booking {
+    display: flex;
+    justify-content: space-between;
+}
+
+.book_now {
+    margin-right: 100px;
+    height: 65px;
+    width: 200px;
+    padding: 0 20px;
+    background-color: #007bff;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_now a {
+    text-decoration: none;
+    color: white;
 }

@@ -109,7 +109,6 @@ function createBook() {
     return location;
 })
 }
-createBook();
 
 function redirect(countryName) {
     switch (countryName) {
